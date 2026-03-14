@@ -36,6 +36,11 @@
 /* top nagivation menu */
 .topnav {
   font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  position: sticky; /* The element becomes sticky when it reaches the specified offset */
+  top: 0; /* Positions the menu at the very top of the screen */
+  width: 100%; /* Ensures the menu spans the full width of the page */
+  background-color: rgba(255,255,255,0.5); /* Example background color */
+  z-index: 10; /* Ensures the menu appears above other content */
 }
 .topnav a {
     padding: 26px;
@@ -239,7 +244,7 @@
   display: grid;
   grid-template-columns: 1fr 1fr; /* Creates 2 equal-width columns */
   grid-template-rows: auto auto; /* Creates rows sized automatically to fit content */
-  gap: 2px; /* Adds space between grid items */
+  gap: 20px; /* Adds space between grid items */
 }
 
 .grid-item {
