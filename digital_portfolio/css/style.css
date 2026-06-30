@@ -247,6 +247,14 @@
   gap: 20px; /* Adds space between grid items */
 }
 
+/*grid container with 3 columns for design page*/
+.grid-container-three-col {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr; /* Creates 3 equal-width columns */
+  grid-template-rows: auto auto auto; /* Creates rows sized automatically to fit content */
+  gap: 20px; /* Adds space between grid items */
+}
+
 .grid-item {
   background-color: white;
   padding: 12px;
